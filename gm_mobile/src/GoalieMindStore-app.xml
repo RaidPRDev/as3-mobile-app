@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/22.0">
+
+	<!-- <id>goaliemind.app</id> -->
+	<id>com.tester.goaliemind</id>
+	<filename>GoalieMindStore</filename>
+	<name>GoalieMindStore</name>
+	<versionNumber>0.5.1</versionNumber>
+	<!-- <description></description> -->
+	<!-- <copyright></copyright> -->
+	<!-- <publisherID></publisherID> -->
+
+	<!-- Settings for the application's initial window. Required. -->
+	<initialWindow>
+		<!-- The main SWF or HTML file of the application. Required. -->
+		<!-- Note: In Flash Builder, the SWF reference is set automatically. -->
+		<content>[This value will be overwritten by Flash Builder in the output app.xml]</content>
+		<fullScreen>false</fullScreen>
+		<visible>true</visible>
+		<autoOrients>true</autoOrients>
+		<aspectRatio>portrait</aspectRatio>
+		<renderMode>direct</renderMode>
+    </initialWindow>
+
+	<icon>
+		<image48x48>icons/icon_48.png</image48x48>
+		<image57x57>icons/icon_57.png</image57x57>
+		<image72x72>icons/icon_72.png</image72x72>
+		<!-- FOR 3.9 <image76x76>icons/icon_76.png</image76x76> -->
+		<image96x96>icons/icon_96.png</image96x96>
+		<image114x114>icons/icon_114.png</image114x114>
+		<!-- FOR 3.9 <image120x120>icons/icon_120.png</image120x120> -->
+		<image144x144>icons/icon_144.png</image144x144>
+		<!-- FOR 3.9 <image512x512>icons/icon_512.png</image512x512>-->
+	</icon>
+	
+	<android>
+		<colorDepth>16bit</colorDepth>
+		<manifestAdditions><![CDATA[
+			<manifest android:installLocation="auto">
+			    <uses-permission android:name="android.permission.INTERNET"/>
+				<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+ 			    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> 
+  			    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+  			    <uses-permission android:name="android.permission.CAMERA"/> 
+ 			    <uses-permission android:name="android.permission.RECORD_AUDIO"/> 
+ 			    <uses-feature android:name="android.hardware.camera" /> 
+ 			    
+ 			    <application>
+					<activity 
+						android:name="com.distriqt.extension.camera.permissions.AuthorisationActivity" 
+						android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+				</application>
+			</manifest>
+		]]></manifestAdditions>
+	</android>
+    <iPhone>
+        <InfoAdditions><![CDATA[
+			<key>UIDeviceFamily</key>
+			<array>
+				<!-- iPhone support -->
+				<string>1</string> 
+				<!-- iPad support -->
+				<!--<string>2</string>-->
+			</array>	
+			<key>UIStatusBarStyle</key> 
+			<string>UIStatusBarStyleLightContent</string> 
+			<key>UIPrerenderedIcon</key>  
+			<true/>
+			<key>UIApplicationExitsOnSuspend</key>
+			<false/>
+			
+			<key>NSAppTransportSecurity</key>
+			<dict>
+				<key>NSAllowsArbitraryLoads</key><true/>  
+				<key>NSExceptionDomains</key>
+				<dict>
+					<key>ec2-52-91-212-191.compute-1.amazonaws.com</key>
+					<dict>
+						<key>NSIncludesSubdomains</key>
+						<true/>
+						<key>NSExceptionAllowsInsecureHTTPLoads</key>
+						<true/>
+						<key>NSExceptionRequiresForwardSecrecy</key>
+						<true/>
+						<key>NSExceptionMinimumTLSVersion</key>
+						<string>TLSv1.2</string>
+						<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+						<false/>
+						<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+						<true/>
+						<key>NSThirdPartyExceptionMinimumTLSVersion</key>
+						<string>TLSv1.2</string>
+						<key>NSRequiresCertificateTransparency</key>
+						<false/>
+					</dict>
+				</dict>
+			</dict>
+		]]></InfoAdditions>
+        <requestedDisplayResolution>high</requestedDisplayResolution>
+    </iPhone>
+	<extensions>
+        <extensionID>com.distriqt.Camera</extensionID>
+    	<extensionID>com.distriqt.Core</extensionID>
+		<extensionID>com.distriqt.AndroidSupport</extensionID>
+    </extensions>
+</application>

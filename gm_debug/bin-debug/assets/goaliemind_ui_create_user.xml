@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:ce329377e621a50904d4ec0ee7cae572$ -->
+<TextureAtlas imagePath="goaliemind_ui_create_user.png">
+    <SubTexture name="art/mindgoalie_personal_assets/boy_art" x="316" y="257" width="94" height="215"/>
+    <SubTexture name="art/mindgoalie_personal_assets/girl_art" x="486" y="2" width="141" height="224"/>
+    <SubTexture name="art/mindgoalie_personal_assets/painting_art" x="412" y="257" width="89" height="138"/>
+    <SubTexture name="art/mindgoalie_personal_assets/speech_bubble_art" x="412" y="397" width="80" height="72"/>
+    <SubTexture name="art/mindgoalie_teacher_assets/mindgoalie_teacher_toggle_pic_active" x="244" y="690" width="240" height="299"/>
+    <SubTexture name="art/mindgoalie_teacher_assets/mindgoalie_teacher_toggle_pic_normal" x="2" y="690" width="240" height="299"/>
+    <SubTexture name="art/mindgoalie_toggle_pic_active" x="2" y="346" width="312" height="342"/>
+    <SubTexture name="art/mindgoalie_toggle_pic_normal" x="2" y="2" width="312" height="342"/>
+    <SubTexture name="continue_red_icon" x="639" y="337" width="62" height="62"/>
+    <SubTexture name="gender/gender_boy_large_active_icon" x="759" y="217" width="101" height="109"/>
+    <SubTexture name="gender/gender_boy_large_normal_icon" x="895" y="130" width="101" height="109"/>
+    <SubTexture name="gender/gender_girl_large_active_icon" x="734" y="328" width="85" height="126"/>
+    <SubTexture name="gender/gender_girl_large_normal_icon" x="862" y="241" width="85" height="126"/>
+    <SubTexture name="large_icons/avatar_large_icon" x="316" y="474" width="128" height="154"/>
+    <SubTexture name="large_icons/banks_large_icon" x="765" y="127" width="128" height="88"/>
+    <SubTexture name="large_icons/email_large_icon" x="494" y="397" width="96" height="66"/>
+    <SubTexture name="large_icons/money_large_icon" x="316" y="2" width="139" height="128"/>
+    <SubTexture name="large_icons/password_large_icon" x="639" y="223" width="93" height="112"/>
+    <SubTexture name="large_icons/privacy_large_icon" x="316" y="630" width="102" height="58"/>
+    <SubTexture name="large_icons/user_cicle_large_icon" x="446" y="471" width="128" height="128"/>
+    <SubTexture name="large_icons/users_large_icon" x="629" y="130" width="128" height="91"/>
+    <SubTexture name="mindgoalie_select/mindgoalie_personal_active_icon" x="629" y="2" width="134" height="126"/>
+    <SubTexture name="mindgoalie_select/mindgoalie_personal_icon" x="503" y="228" width="134" height="126"/>
+    <SubTexture name="mindgoalie_select/mindgoalie_teacher_active_icon" x="765" y="2" width="135" height="123"/>
+    <SubTexture name="mindgoalie_select/mindgoalie_teacher_icon" x="316" y="132" width="135" height="123"/>
+    <SubTexture name="plus_red_icon" x="949" y="305" width="62" height="62"/>
+    <SubTexture name="signin_red_icon" x="949" y="241" width="62" height="62"/>
+    <SubTexture name="small_icons/birthday_small_icon" x="638" y="401" width="40" height="43"/>
+    <SubTexture name="small_icons/calendar_small_icon" x="592" y="356" width="44" height="44"/>
+    <SubTexture name="small_icons/gender_small_icon" x="420" y="630" width="39" height="51"/>
+    <SubTexture name="spinner-list-fade-small-overlay-skin" x="466" y="2" width="7" height="70"/>
+    <SubTexture name="spinner-list-overlay-skin" x="457" y="2" width="7" height="88"/>
+    <SubTexture name="toggle_active_button" x="902" y="66" width="102" height="62"/>
+    <SubTexture name="toggle_active_red_button" x="902" y="2" width="102" height="62"/>
+    <SubTexture name="toggle_normal_button" x="461" y="601" width="102" height="62"/>
+    <SubTexture name="vscroll_bar" x="2" y="991" width="7" height="16"/>
+</TextureAtlas>
