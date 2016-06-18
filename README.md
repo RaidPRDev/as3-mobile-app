@@ -1,1 +1,1 @@
-# goaliemind
+# goaliemind mobile application
